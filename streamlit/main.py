@@ -38,7 +38,7 @@ def addParameterUi(clfName):
     elif(clfName == "DecitionTreeClassifier"):
          criterion = st.sidebar.selectbox("criterion",("gini","entropy","log_loss"))
          splitter = st.sidebar.selectbox("splitter",("best","random"))
-         max_depth = int(st.sidebar.number_input("max_depth",value=4))
+         max_depth = int(st.sidebar.number_input("max_depth",value=3))
          max_leaf_nodes = int(st.sidebar.slider("max_leaf_nodes",2,10))
          min_samples_split = st.sidebar.number_input("min_samples_split",value=2)
          min_samples_leaf = st.sidebar.number_input("min_samples_leaf",value=1)
